@@ -18,5 +18,4 @@ function getRandomHexColorBtn() {
         .toString(16)
         .padStart(6, 0)}`;
     btnEl.style.backgroundColor = randomColor;
-    colorEl.style.color = randomColor;
 }
