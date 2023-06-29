@@ -12,11 +12,11 @@ function getRandomHexColor() {
     bodyEl.style.backgroundColor = randomColor;
 }
 
-// btnEl.addEventListener('click', getRandomHexColorBtn);
-// function getRandomHexColorBtn() {
-//     const randomColor = `#${Math.floor(Math.random() * 16777215)
-//         .toString(16)
-//         .padStart(6, 0)}`;
-//     btnEl.style.backgroundColor = randomColor;
-//     colorEl.style.color = randomColor;
-// }
+btnEl.addEventListener('click', getRandomHexColorBtn);
+function getRandomHexColorBtn() {
+    const randomColor = `#${Math.floor(Math.random() * 16777215)
+        .toString(16)
+        .padStart(6, 0)}`;
+    btnEl.style.backgroundColor = randomColor;
+    colorEl.style.color = randomColor;
+}
