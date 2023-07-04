@@ -12,13 +12,13 @@ function onFormSubmit(event) {
 
     if (mail === '' || password === '') {
         alert('Все поля должны быть заполнены!');
+    } else {
+        const value = {
+            mail,
+            password,
+        };
+
+        console.log(value);
+        event.currentTarget.reset();
     }
-
-    const value = {
-        mail,
-        password,
-    };
-
-    console.log(value);
-    event.currentTarget.reset();
 }

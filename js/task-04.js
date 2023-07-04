@@ -6,12 +6,12 @@ let counterValue = 0;
 
 const decrementCallBack = () => {
     counterValue -= 1;
-    valueEl.innerHTML = counterValue;
+    valueEl.textContent = counterValue;
 };
 btnDecrementEl.addEventListener('click', decrementCallBack);
 
 const IncrementCallBack = () => {
     counterValue += 1;
-    valueEl.innerHTML = counterValue;
+    valueEl.textContent = counterValue;
 };
 btnIncrementEl.addEventListener('click', IncrementCallBack);
